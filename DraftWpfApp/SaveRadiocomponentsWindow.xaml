@@ -5,15 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DraftWpfApp"
         mc:Ignorable="d"
-        Title="Save Radiocomponents" Height="130" Width="300" ResizeMode="NoResize" SizeToContent="WidthAndHeight">
+        Title="Save Radiocomponents" Height="130" Width="350" ResizeMode="NoResize" SizeToContent="WidthAndHeight">
 
     <StackPanel Margin="5">
-        <RadioButton Content="Save All Radiocomponents" Margin="2"/>
-        <RadioButton Content="Save Selected Radiocomponents" Margin="2"/>
+        <RadioButton Name="saveAllRadioButton" IsChecked="True" Content="Save All Radiocomponents" Margin="5"/>
+        <RadioButton Name="saveSelectedRadioButton" Content="Save Selected Radiocomponents" Margin="5"/>
 
         <StackPanel Orientation="Horizontal">
-            <Button Name="saveRadiocomponents" Content="Save Radiocomponents" Margin="2" Width="130"/>
-            <Button Name="cancelButton" Content="Cancel" Margin="2" Width="130"/>
+            <Button Name="saveRadiocomponents" Content="Save Radiocomponents" Margin="5" Width="150"/>
+            <Button Name="cancelButton" Content="Cancel" Margin="5" Width="150"/>
         </StackPanel>
     </StackPanel>
 </Window>
