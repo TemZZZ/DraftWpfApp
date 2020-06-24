@@ -1,0 +1,19 @@
+﻿<Window x:Class="DraftWpfApp.SaveRadiocomponentsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DraftWpfApp"
+        mc:Ignorable="d"
+        Title="Save Radiocomponents" Height="102" Width="286" ResizeMode="NoResize">
+
+    <StackPanel Margin="5">
+        <RadioButton Content="Save All Radiocomponents" Margin="2"/>
+        <RadioButton Content="Save Selected Radiocomponents" Margin="2"/>
+
+        <StackPanel Orientation="Horizontal">
+            <Button Name="saveRadiocomponents" Content="Save Radiocomponents" Margin="2" Width="130"/>
+            <Button Name="cancelButton" Content="Cancel" Margin="2" Width="130"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
