@@ -18,6 +18,7 @@
         <StackPanel Grid.Row="0" Grid.Column="1">
             <GroupBox Header="Modify Selected Radiocomponent">
                 <StackPanel>
+                    <local:RadiocomponentControl/>
                     <Button Name="modifyRadiocomponentButton" Content="Modify Radiocomponent" Margin="2"/>
                 </StackPanel>
             </GroupBox>
