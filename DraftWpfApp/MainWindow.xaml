@@ -6,7 +6,37 @@
         xmlns:local="clr-namespace:DraftWpfApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="0.4*"/>
+        </Grid.ColumnDefinitions>
+
+        <DataGrid Name="radiocomponentsDataGrid" Grid.Row="0" Grid.Column="0"/>
+
+        <StackPanel Grid.Row="0" Grid.Column="1">
+            <GroupBox Header="Modify Selected Radiocomponent">
+                <StackPanel>
+                    <Button Name="modifyRadiocomponentButton" Content="Modify Radiocomponent" Margin="2"/>
+                </StackPanel>
+            </GroupBox>
+
+            <GroupBox Header="Work with Radiocomponents">
+                <StackPanel>
+                    <Button Name="addRadiocomponentButton" Content="Add Radiocomponent" Margin="2"/>
+                    <Button Name="deleteSelectedRadiocomponentsButton" Content="Delete Selected Radiocomponents" Margin="2"/>
+                </StackPanel>
+            </GroupBox>
+
+            <GroupBox Header="Work with Files">
+                <StackPanel>
+                    <Button Name="loadRadiocomponentsButton" Content="Load Radiocomponents" Margin="2"/>
+                    <Button Name="saveRadiocomponentsButton" Content="Save Radiocomponents" Margin="2"/>
+                </StackPanel>
+            </GroupBox>
+
+            <Button Name="searchRadiocomponentsButton" Content="Search Radiocomponents" Margin="8"/>
+        </StackPanel>
     </Grid>
 </Window>
