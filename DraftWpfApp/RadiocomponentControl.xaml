@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="DraftWpfApp.RadiocomponentControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DraftWpfApp"
+             mc:Ignorable="d" 
+             d:DesignHeight="100" d:DesignWidth="200">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <RadioButton Name="resistorRadioButton" Grid.Row="0" Grid.ColumnSpan="2" Content="Resistor" Margin="5" VerticalAlignment="Center"/>
+        <RadioButton Name="inductorRadioButton" Grid.Row="1" Grid.ColumnSpan="2" Content="Inductor" Margin="5" VerticalAlignment="Center"/>
+        <RadioButton Name="capacitorRadioButton" Grid.Row="2" Grid.ColumnSpan="2" Content="Capacitor" Margin="5" VerticalAlignment="Center"/>
+        <TextBlock Name="quantityUnitTextBlock" Grid.Row="3" Grid.Column="0" Text="Quantity, Unit" Margin="5" VerticalAlignment="Center" MinWidth="100"/>
+        <TextBox Name="valueTextBox" Grid.Row="3" Grid.Column="1" Margin="5" VerticalAlignment="Center"/>
+    </Grid>
+</UserControl>
