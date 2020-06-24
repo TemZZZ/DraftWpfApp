@@ -11,7 +11,7 @@
         <local:RadiocomponentControl/>
         <StackPanel Orientation="Horizontal">
             <Button Name="addRadiocomponentButton" Content="Add Radiocomponent" Margin="5" Width="140"/>
-            <Button Name="cancelButton" Content="Cancel" Margin="5" Width="140"/>
+            <Button Name="cancelButton" IsCancel="True" Content="Cancel" Margin="5" Width="140"/>
         </StackPanel>
     </StackPanel>
 </Window>
