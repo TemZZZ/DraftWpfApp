@@ -1,0 +1,17 @@
+﻿<Window x:Class="DraftWpfApp.AddRadiocomponentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DraftWpfApp"
+        mc:Ignorable="d"
+        Title="Add Radiocomponent" Height="200" Width="360" SizeToContent="WidthAndHeight" ResizeMode="NoResize">
+
+    <StackPanel>
+        <local:RadiocomponentControl/>
+        <StackPanel Orientation="Horizontal">
+            <Button Name="addRadiocomponentButton" Content="Add Radiocomponent" Margin="5" Width="140"/>
+            <Button Name="cancelButton" Content="Cancel" Margin="5" Width="140"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
