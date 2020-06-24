@@ -1,0 +1,19 @@
+﻿<Window x:Class="DraftWpfApp.LoadRadiocomponentsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DraftWpfApp"
+        mc:Ignorable="d"
+        Title="Load Radiocomponents" Height="130" Width="350" ResizeMode="NoResize" SizeToContent="WidthAndHeight">
+
+    <StackPanel Margin="5">
+        <RadioButton Name="addToEndRadioButton" IsChecked="True" Content="Add Radiocomponents to End of the Table" Margin="5"/>
+        <RadioButton Name="replaceAllRadioButton" Content="Replace All Radiocomponents in the Table" Margin="5"/>
+
+        <StackPanel Orientation="Horizontal">
+            <Button Name="loadRadiocomponents" Content="Load Radiocomponents" Margin="5" Width="150"/>
+            <Button Name="cancelButton" Content="Cancel" Margin="5" Width="150"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
